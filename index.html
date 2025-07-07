@@ -9,11 +9,16 @@
     <link rel="stylesheet" href="product.css">
     <link rel="stylesheet" href="index.css">
 
+
     <link rel="stylesheet" href="mediaquery.css">
 
 </head>
 
 <body>
+
+    <div class="preloader">
+        <div class="preloader-logo">GARDEN</div>
+    </div>
 
     <div class="main_div">
         <header class="site-header">
@@ -36,7 +41,6 @@
 
         <div class="card">
             <div class="gradient"></div>
-            <!-- <img src="https://framerusercontent.com/images/VtyRMVPztxFaFOK4e95dHXt7I.svg"> -->
             <h1>✦ Paraná - Brazil</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
@@ -71,9 +75,7 @@
         </div>
 
         <div class="footer-ctt">
-            <div></div>
-            <div></div>
-            <div></div>
+        
         </div>
     </footer>
 
@@ -105,7 +107,6 @@
                         <li>XG Large</li>
                     </ul>
                 </div>
-
                 <div class="dropdown2">
                     <button class="dropdown-btn2"><span class="icon">+</span></button>
                     <ul class="dropdown-menu">
@@ -116,37 +117,13 @@
                         <li>5</li>
                     </ul>
                 </div>
-
-                            <button class="buy">Add to Cart</button>
-
+                <button class="buy">Add to Cart</button>
             </div>
         </div>
-
     </div>
 
-    <script>
-        let p = document.getElementById('scrollToView');
-        let about = document.getElementById('scrollToViewAbout')
-
-
-    p.addEventListener('click', () => {
-    window.scrollTo({
-      top: 668,       
-      behavior: 'smooth'  
-    });
-  });
-
-  about.addEventListener('click', () => {
-    window.scrollTo({
-      top: 2000,       
-      behavior: 'smooth'  
-    });
-  });
-
-    </script>    
     <script src="product.js" defer></script>
-
-
+    <script src="script.js" defer></script>
 </body>
 
 </html>

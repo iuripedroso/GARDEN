@@ -1,165 +1,194 @@
  body,
-        html {
-            margin: 0;
-        }
+ html {
+     margin: 0;
+ }
 
-        * {
-            box-sizing: border-box;
-        }
+ * {
+     box-sizing: border-box;
+ }
 
-        body {
-            background-color: #F2F0EC;
+ body {
+     background-color: #F2F0EC;
 
-        }
+ }
 
-        .main_div {
-            display: flex;
-            flex-direction: column;
-            /* mantém o layout em coluna */
-            width: 100%;
-            height: 100vh;
-            /* border: white 2px solid; */
-            position: relative;
-            overflow: hidden;
+ .preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 1s ease;
+}
 
-        }
+.preloader-logo {
+  font-size: 2.5rem;
+  letter-spacing: 0.1em;
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+}
 
-        .main_div img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -1;
-        }
-
-        .site-header {
-            display: flex;
-            justify-content: space-between;
-            padding: 0px;
-            z-index: 1;
-            margin: 40px 49px;
-            height: 50px;
-            color: rgb(255, 232, 201);
-
-            /* position: fixed; */
-        }
-
-        .site-nav a {
-            margin-left: 5px;
-            text-decoration: none;
-            color: antiquewhite;
-            font-weight: 100;
-            font-size: 20px;
-            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-        }
-
-        .title_div {
-            flex-direction: column;
-            text-transform: uppercase;
-            display: flex;
+@keyframes fadeIn {
+  to {
+    opacity: 1; /*ação na logo*/ 
+  }
+}
 
 
-            margin: 40px 0px 0px 49px;
-            color: aliceblue;
+ .main_div {
+     display: flex;
+     flex-direction: column;
+     /* mantém o layout em coluna */
+     width: 100%;
+     height: 100vh;
+     /* border: white 2px solid; */
+     position: relative;
+     overflow: hidden;
+
+ }
+
+ .main_div img {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     z-index: -1;
+ }
+
+ .site-header {
+     display: flex;
+     justify-content: space-between;
+     padding: 0px;
+     z-index: 1;
+     margin: 40px 49px;
+     height: 50px;
+     color: rgb(255, 237, 212);
+
+     /* position: fixed; */
+ }
+
+ .site-nav a {
+     margin-left: 5px;
+     text-decoration: none;
+     color: antiquewhite;
+     font-weight: 100;
+     font-size: 20px;
+     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+ }
+
+ .title_div {
+     flex-direction: column;
+     text-transform: uppercase;
+     display: flex;
 
 
-        }
-
-        .title {
-
-            margin: 0;
-            font-size: 70px;
-        }
-
-        .title2 {
-            font-size: 70px;
-            margin-top: 0;
-            margin-bottom: 0;
-        }
-
-        .logo {
-            margin-left: 3px;
-            font-size: 30px;
-            font-weight: 100;
-        }
+     margin: 40px 0px 0px 49px;
+     color: rgb(255, 237, 212);
 
 
-        .produtos {
-            /* border: black solid 2px; */
-            height: auto;
-            margin: 0px 0px 0px 0px;
-            display: flex;
-            padding: 50px;
-            justify-content: center;
-            align-items: center;
+ }
 
-            overflow: hidden;
-            flex-wrap: wrap;
-        }
+ .title {
 
-        .produtos div {
-            height: 400px;
-            aspect-ratio: 1/1.3;
-            /* border: solid black 2px; */
-            margin: 25px 20px 20px 20px;
+     margin: 0;
+     font-size: 70px;
+ }
 
-            cursor: pointer;
-        }
+ .title2 {
+     font-size: 70px;
+     margin-top: 0;
+     margin-bottom: 0;
+ }
+
+ .logo {
+     margin-left: 3px;
+     font-size: 30px;
+     font-weight: 100;
+ }
 
 
+ .produtos {
+     /* border: black solid 2px; */
+     height: auto;
+     margin: 0px 0px 0px 0px;
+     display: flex;
+     padding: 50px;
+     justify-content: center;
+     align-items: center;
 
-        .produtos div img {
-            object-fit: cover;
-            height: 100%;
+     overflow: hidden;
+     flex-wrap: wrap;
+ }
 
-            object-fit: cover;
-            transition: filter 0.3s ease;
-            display: block;
+ .produtos div {
+     height: 400px;
+     aspect-ratio: 1/1.3;
+     /* border: solid black 2px; */
+     margin: 25px 20px 20px 20px;
 
-        }
-
-        footer {
-            /* background-color: blueviolet; */
-            height: 200px;
-
-
-        }
-
-        hr {
-            width: 90%;
-            border: black solid .1px
-        }
-
-        .div_footer {
-            margin: auto;
-            /* border: black solid .1px; */
-            width: 500px;
-            display: flex;
-            flex-direction: column;
-            margin-top: 50px;
-        }
-
-        .div_footer p {
-            margin: auto;
-            font-size: 18px;
-        }
-
-        h2 {
-            width: 100%;
-            color: rgb(31, 29, 29);
-            /* border: black solid 2px; */
-            justify-content: center;
+     cursor: pointer;
+ }
 
 
-            padding: 0%;
-            font-size: 40px;
-            margin-bottom: 10px;
-            text-align: center;
-            margin-top: 60px;
-        }
 
-        .site-nav a:hover{
-            text-decoration: underline;
-        }
+ .produtos div img {
+     object-fit: cover;
+     height: 100%;
+
+     object-fit: cover;
+     transition: filter 0.3s ease;
+     display: block;
+
+ }
+
+ footer {
+     /* background-color: blueviolet; */
+     height: 200px;
+
+
+ }
+
+ hr {
+     width: 90%;
+     border: black solid .1px
+ }
+
+ .div_footer {
+     margin: auto;
+     /* border: black solid .1px; */
+     width: 500px;
+     display: flex;
+     flex-direction: column;
+     margin-top: 50px;
+ }
+
+ .div_footer p {
+     margin: auto;
+     font-size: 18px;
+ }
+
+ h2 {
+     width: 100%;
+     color: rgb(31, 29, 29);
+     /* border: black solid 2px; */
+     justify-content: center;
+
+
+     padding: 0%;
+     font-size: 40px;
+     margin-bottom: 10px;
+     text-align: center;
+     margin-top: 60px;
+ }
+
+ .site-nav a:hover {
+     text-decoration: underline;
+ }

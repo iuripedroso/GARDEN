@@ -1,146 +1,150 @@
+
 @media (max-width: 768px) {
-  .main_div {
-    height: auto;
-  }
+    .main_div {
+        height: auto;
+    }
 
-  .title_div{
-    /* border: wheat solid 2px; */
-    margin-left: 20px;
-  }
-  .title {
-    font-size: 36px;
-    /* border: wheat solid 2px; */
-  }
+    .title_div {
+        margin-left: 20px;
+    }
 
-  .title2 {
-    font-size: 36px;
-  }
+    .title, .title2 {
+        font-size: 36px;
+    }
 
-  .site-header {
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 20px;
-    height: auto;
-    gap: 10px;
-  }
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 20px;
+        height: auto;
+        gap: 10px;
+    }
 
-  .site-nav a {
-    font-size: 16px;
-  }
+    .site-nav a {
+        font-size: 16px;
+    }
 
-  .produtos {
-    flex-direction: column;
-    padding: 20px;
-    gap: 20px;
-  }
+    .produtos {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
 
-  .produtos h2 {
-    font-size: 28px;
-    margin-left: 0;
-    margin-top: 30px;
-    text-align: center;
-  }
+    .produtos h2 {
+        font-size: 28px;
+        margin-left: 0;
+        margin-top: 30px;
+        text-align: center;
+    }
 
-  .produtos .card {
-    width: 90%;
-    height: auto;
-    margin: 10px auto;
-  }
+    .produtos .card {
+        width: 90%;
+        height: auto;
+        margin: 10px auto;
+    }
 
-  .produtos .card img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1 / 1.2;
-  }
+    .produtos .card img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1.2;
+    }
 
-  .card {
-    margin: 20px auto;
-    width: 90%;
-    height: auto;
-    padding: 20px;
-  }
+    .card {
+        margin: 20px auto;
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
 
-  .card h1 {
-    font-size: 24px;
-  }
+    .card h1 {
+        font-size: 24px;
+    }
 
-  .card p {
-    font-size: 16px;
-  }
+    .card p {
+        font-size: 16px;
+    }
 
-  .produtos .card button {
-    font-size: 16px;
-    padding: 8px 16px;
-  }
+    .produtos .card button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
 
-  .div_footer {
-    width: 90%;
-  }
+    .div_footer {
+        width: 90%;
+    }
 
-  .div_footer p {
-    font-size: 16px;
-  }
+    .div_footer p {
+        font-size: 16px;
+    }
 
-  h2 {
-    font-size: 28px;
-    margin-left: 0;
-    text-align: center;
-  }
+    h2 {
+        font-size: 28px;
+        margin-left: 0;
+        text-align: center;
+    }
 
-  /* product */
+    /* product */
 
-   #pop {
+    #pop {
         width: 90vw;
         height: 50vh;
-        padding: 30px 20px 50px 20px;
+        padding: 40px 40px 50px 40px;
+        overflow: visible; /* <--- importante para menu não cortar */
     }
 
     .pop-title h1 {
         font-size: 24px;
-        
     }
 
-    .pop-bio{
-      width: 95%;
-      margin-bottom: 30px;
-      font-size: 13px;
+    .pop-bio {
+        width: 95%;
+        margin-bottom: 0px;
+        font-size: 13px;
     }
 
-    .qtn,
-    .options {
-       width: 100%;
-        /* border: solid black 2px; */
+    .qtn, .options {
+        width: 100%;
     }
 
     .options p {
         top: 0;
         margin: 0;
-  
-
     }
 
     .options p:nth-of-type(2) {
         margin-left: 150px;
     }
 
-    .dropdown,
-    .dropdown2 {
-        width: 140px;
-    }
+   .dropdown, .dropdown2 {
+    width: 160px; 
+    height: 50px;
+    position: relative;
+    z-index: 20;
+    /* border: black solid 2px;  */
+  }
 
-    .dropdown-btn,
-    .dropdown-btn2 {
-        font-size: 7px;
+
+.dropdown2 {
+    left: 70px;
+  }
+
+    .dropdown-btn, .dropdown-btn2 {
         padding: 8px 0;
     }
 
-   
+    .dropdown-menu {
+        z-index: 30;
+        position: absolute;
+    }
 
     .buy {
-        display: block;
-        width: 100;
+        position: relative;
+        width: 150px;
         max-width: 200px;
+        
         height: 50px;
         font-size: 14px;
+        z-index: 10;
+        right: 196px;
     }
 }

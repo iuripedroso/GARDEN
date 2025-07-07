@@ -1,41 +1,33 @@
-
 let cards = document.querySelectorAll('.produtos .card');
 let modalFundo = document.getElementById('modalFundo');
 let fecharBtn = document.getElementById('fecharBtn');
 
+// Abre o modal ao clicar em qualquer card
 cards.forEach(card => {
     card.addEventListener('click', () => {
         modalFundo.style.display = 'flex';
-    });
-});
+    })
+})
 
+// Fecha o modal
 fecharBtn.addEventListener('click', () => {
     modalFundo.style.display = 'none';
-});
+})
 
 // Dropdown 1
 let btn1 = document.querySelector('.dropdown-btn');
 let menu1 = document.querySelector('.dropdown .dropdown-menu');
 
-let buy = document.querySelector('.buy')
-
 btn1.addEventListener('click', (e) => {
-    e.stopPropagation(); // impede o fechamento automático
-    if (menu1.style.display === 'block') {
+    e.stopPropagation(); 
+    menu1.style.display = menu1.style.display === 'block' ? 'none' : 'block';
+})
+
+document.querySelector('.dropdown .dropdown-menu').addEventListener('click', (e) => {
+    if (e.target.tagName === 'LI') {
+        btn1.innerHTML = `${e.target.textContent} <span class="icon">▼</span>`;
         menu1.style.display = 'none';
-        buy.style.zIndex = '1000';
-    } else {
-        menu1.style.display = 'block';
-        buy.style.zIndex = '-2';
     }
-
-});
-
-document.querySelectorAll('.dropdown .dropdown-menu li').forEach(option => {
-    option.addEventListener('click', () => {
-        btn1.innerHTML = `${option.textContent} <span class="icon">▼</span>`;
-        menu1.style.display = 'none';
-    });
 });
 
 // Dropdown 2
@@ -47,14 +39,14 @@ btn2.addEventListener('click', (e) => {
     menu2.style.display = menu2.style.display === 'block' ? 'none' : 'block';
 });
 
-document.querySelectorAll('.dropdown2 .dropdown-menu li').forEach(option => {
-    option.addEventListener('click', () => {
-        btn2.innerHTML = `${option.textContent} <span class="icon">+</span>`;
+document.querySelector('.dropdown2 .dropdown-menu').addEventListener('click', (e) => {
+    if (e.target.tagName === 'LI') {
+        btn2.innerHTML = `${e.target.textContent} <span class="icon">+</span>`;
         menu2.style.display = 'none';
-    });
+    }
 });
 
-// Fechar dropdowns ao clicar fora
+// Fecha dropdowns se clicar fora
 window.addEventListener('click', (e) => {
     if (!document.querySelector('.dropdown').contains(e.target)) {
         menu1.style.display = 'none';
@@ -63,4 +55,3 @@ window.addEventListener('click', (e) => {
         menu2.style.display = 'none';
     }
 });
-
