@@ -1,0 +1,178 @@
+        #modalFundo {
+            display: none;
+            /* inicialmente escondido */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.5);
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        #pop {
+            width: 500px;
+            height: 500px;
+            background: #FEFEFE;
+            border-radius: 10px;
+            padding: 60px;
+            position: relative;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+
+
+
+            overflow: hidden;
+            padding-top: 55px;
+        }
+
+        .pop-title {
+            /* border: black 2px solid; */
+            height: auto;
+        }
+
+        .pop-title h1 {
+            font-weight: 100;
+            font-size: 38px;
+
+           padding: 0%;
+        }
+
+        .pop-bio {
+            /* border: black 2px solid; */
+            height: auto;
+            margin-top: 0;
+            padding: 0%;
+
+        }
+
+        #fecharBtn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 25px;
+            font-weight: 100;
+            cursor: pointer;
+            border: none;
+            background: none;
+        }
+
+        .dropdown {
+            position: relative;
+            width: 160px;
+
+            /* border: black solid 2px; */
+        }
+
+        .dropdown2 {
+            position: relative;
+            width: 160px;
+            margin-left: auto;
+            /* border: black solid 2px; */
+        }
+
+        .dropdown-btn {
+            display: flex;
+            width: 100%;
+            padding: 10px 0px;
+            font-size: 16px;
+            background-color: #FEFEFE;
+            border: none;
+            border-bottom: 3px solid #000000;
+            cursor: pointer;
+        }
+
+        .dropdown-btn2 {
+            display: flex;
+            width: 100%;
+            padding: 10px 0px;
+            font-size: 16px;
+            background-color: #FEFEFE;
+            border: none;
+            border-bottom: 3px solid #000000;
+            cursor: pointer;
+
+        }
+
+        .dropdown-btn span {
+            margin-left: auto;
+            /* border: black solid 2px; */
+        }
+
+        .dropdown-btn2 span {
+            margin-left: auto;
+            text-decoration: #000000;
+            font-weight: bolder;
+            /* border: black solid 2px; */
+        }
+
+
+        .dropdown-menu li {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .dropdown-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            background: white;
+            border: 1px solid #ccc;
+            
+
+
+            display: none;
+            z-index: 1000;
+        }
+
+        .dropdown-menu li:hover {
+            background-color: #f0f0f0;
+        }
+
+        .qtn {
+            display: flex;
+            /* border: black 2px solid; */
+            margin-top: 0px;
+        }
+
+        .options {
+            display: flex;
+            height: 50px;
+            margin-top: 15px;
+            /* border: black 2px solid; */
+            padding-bottom: 0;
+
+        }
+
+        .options p:nth-of-type(2) {
+            margin-left: 198px;
+
+        }
+
+        .options p {
+            position: relative; /*pra vazar a div */
+            top: 16px;
+            /* border: #000000 solid 2px;    */
+        }
+
+        .buy{
+            position: absolute;
+
+            margin: 70px 0px 0px 0px ;
+            height: 60px;
+            width: 150px;
+
+            color: #f0f0f0;
+            font: 300;
+            font-size: 13px;
+
+            cursor: pointer;
+            background-color: #2b2a2b;
+            
+           
+        }

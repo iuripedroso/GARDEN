@@ -1,0 +1,86 @@
+.card {
+  position: relative;
+  width: 44.4vh;
+  height: 33.3vh;
+  border-radius: 10px;
+  margin: 50px 150px 0 auto;
+  overflow: hidden;
+  display: flex;
+
+  padding: 15px;
+  color: white;
+  flex-direction: column;
+    border: white 1px solid;
+          justify-content: center;
+}
+
+/* .card img {
+  margin: 15px;
+  margin-bottom: 5px;
+  margin-top: 80px;
+  width: 20%;
+  height: 20%;
+  object-fit: cover;
+  z-index: 2;
+  border-radius: 10px;
+} */
+
+.gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+  z-index: 1;
+}
+
+.card h1 {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 100;
+  z-index: 2;
+  margin: 0;
+  font-size: 30px;
+        /* border: white 2px solid; */
+
+  
+}
+
+.card p{
+    color: white;
+    z-index: 2;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 100;
+          /* border: white 2px solid; */
+
+}
+
+/* segundo card */
+
+.produtos .card:hover button {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.produtos .card:hover img {
+  filter: blur(4px) brightness(0.7);
+}
+
+.produtos .card button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  opacity: 0;
+  pointer-events: none;
+  
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 5px;
+  color: #333;
+  font-weight: bold;
+  transition: opacity 0.3s ease;
+}

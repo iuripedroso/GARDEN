@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GARDEN</title>
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet" href="mediaquery.css">
+
+</head>
+
+<body>
+
+    <div class="main_div">
+        <header class="site-header">
+            <div class="logo">GARDEN</div>
+            <nav class="site-nav">
+                <a target="_blank" href="https://wa.me/5542999316819">Order Flowers</a>
+                <a id="scrollToView" href="#">Plantas and Flowers</a>
+                <a href="#">Gift Cards</a>
+                <a id="scrollToViewAbout" href="#">About</a>
+                <a target="_blank" href="https://wa.me/5542999316819">Contact</a>
+            </nav>
+        </header>
+
+        <img src="imgs/MAIN img.avif" class="main_img" />
+
+        <div class="title_div">
+            <h1 class="title">bring life</h1>
+            <h1 class="title2">into your space</h1>
+
+        </div>
+
+        <div class="card">
+            <div class="gradient"></div>
+            <!-- <img src="https://framerusercontent.com/images/VtyRMVPztxFaFOK4e95dHXt7I.svg"> -->
+            <h1>✦ Paraná - Brazil</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+
+
+    <div class="produtos">
+        <h2>GIVE US SOME MONEY</h2>
+        <div class="card">
+            <img src="imgs/card 1.webp" alt="">
+            <button>Comprar</button>
+        </div>
+        <div class="card">
+            <img src="imgs/card 2.webp" alt="">
+            <button>Comprar</button>
+        </div>
+        <div class="card">
+            <img src="imgs/card 3.webp" alt="">
+            <button>Comprar</button>
+        </div>
+    </div>
+
+
+    <footer>
+        <hr>
+        <div class="div_footer">
+            <p>
+                910 Pecan Avenue Charlotte, NC 28205
+            </p>
+            <p>MON-FRI 9am-6pm SAT 10am-3pm</p>
+            <p>704.905.9808</p>
+        </div>
+
+        <div class="footer-ctt">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </footer>
+
+    <div id="modalFundo">
+        <div id="pop">
+            <button id="fecharBtn">&times;</button>
+            <div class="pop-title">
+                <h1>Calathea Orbifolia</h1>
+            </div>
+
+            <div class="pop-bio">
+                <p>For years, dedicated growers have nurtured the stunning Calathea Orbifolia, known for its bold
+                    silver-striped leaves and graceful symmetry. A natural work of art, this tropical plant brings
+                    refined beauty and quiet balance to any space.</p>
+            </div>
+
+            <div class="options">
+                <p>size</p>
+                <p>quantity</p>
+            </div>
+
+            <div class="qtn">
+                <div class="dropdown">
+                    <button class="dropdown-btn"><span class="icon">▼</span></button>
+                    <ul class="dropdown-menu">
+                        <li>Small</li>
+                        <li>Medium</li>
+                        <li>Large</li>
+                        <li>XG Large</li>
+                    </ul>
+                </div>
+
+                <div class="dropdown2">
+                    <button class="dropdown-btn2"><span class="icon">+</span></button>
+                    <ul class="dropdown-menu">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                    </ul>
+                </div>
+
+                            <button class="buy">Add to Cart</button>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        let p = document.getElementById('scrollToView');
+        let about = document.getElementById('scrollToViewAbout')
+
+
+    p.addEventListener('click', () => {
+    window.scrollTo({
+      top: 668,       
+      behavior: 'smooth'  
+    });
+  });
+
+  about.addEventListener('click', () => {
+    window.scrollTo({
+      top: 2000,       
+      behavior: 'smooth'  
+    });
+  });
+
+    </script>    
+    <script src="product.js" defer></script>
+
+
+</body>
+
+</html>
