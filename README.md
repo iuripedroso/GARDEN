@@ -1,4 +1,4 @@
-# 🌱 GARDEN
+## 🌱 GARDEN
 
 Bem-vindo ao **GARDEN** — um projeto de site estático desenvolvido em **HTML, CSS e JavaScript**, com objetivo de apresentar e vender plantas ornamentais online.  
 
@@ -10,7 +10,6 @@ O site já está disponível pelo **GitHub Pages**:
 ## 📸 Prévia
 
 ![preview](./imgs/preview.png)  
-*(adicione aqui uma captura de tela do site para melhor visualização)*
 
 ---
 
