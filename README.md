@@ -9,7 +9,7 @@ O site já está disponível pelo **GitHub Pages**:
 
 ## 📸 Prévia
 
-(./imgs/2025-08-19 14.32.33 iuripedroso.github.io d6390d0610bb.png)  
+![preview](./imgs/2025-08-19 14.32.33 iuripedroso.github.io d6390d0610bb.png)  
 
 ---
 
