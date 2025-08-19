@@ -9,7 +9,8 @@ O site já está disponível pelo **GitHub Pages**:
 
 ## 📸 Prévia
 
-url(https://github.com/iuripedroso/GARDEN/blob/main/2025-08-19%2014.32.33%20iuripedroso.github.io%20d6390d0610bb.jpg?raw=true)
+![Prévia do site](https://github.com/iuripedroso/GARDEN/blob/main/2025-08-19%2014.32.33%20iuripedroso.github.io%20d6390d0610bb.jpg?raw=true)
+
 
 ---
 
