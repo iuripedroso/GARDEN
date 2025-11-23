@@ -9,6 +9,8 @@ O site já está disponível pelo **GitHub Pages**:
 
 ![Prévia do site](https://github.com/iuripedroso/GARDEN/blob/main/2025-08-19%2014.32.33%20iuripedroso.github.io%20d6390d0610bb.jpg?raw=true)
 
+--
+
 ## 🚀 Funcionalidades
 
 - Página inicial com apresentação visual do projeto.  
@@ -22,6 +24,4 @@ O site já está disponível pelo **GitHub Pages**:
 - **HTML5**
 - **CSS3** (incluindo `mediaquery.css` para responsividade)
 - **JavaScript Vanilla** (`script.js`, `product.js`, `loader.js`)
-
----
 
