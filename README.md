@@ -3,7 +3,7 @@
 Bem-vindo ao **GARDEN** — um projeto de site desenvolvido em **HTML, CSS e JavaScript**, com objetivo de apresentar e vender plantas ornamentais online.  
 
 O site já está disponível pelo **GitHub Pages**:  
-(https://iuripedroso.github.io/GARDEN/)
+(https://iuripedroso.github.io/GARDEN/) teste
 
 
 ## 📸 Prévia
